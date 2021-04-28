@@ -1,3 +1,4 @@
 # BARZAP-JS-fetch-API
 
-Fetch template with data from the API built in public Rest API( hosted on Heroku, the easy and powerfull way to deploy applications on the cloud) using fetch API, implement the frontend using vanilla JavaScript.
+Fetch template with data from the API built in public Rest API using fetch API, implement the frontend using vanilla JavaScript.
+
