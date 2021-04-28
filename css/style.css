@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+#title 
+{
+    text-align: center;
+}
+
+.d-grid {
+    text-align: left;
+}
+#getText 
+{
+    text-align: left;
+}
+#getLogin
+{
+    text-align: left;
+    word-spacing: 1225px;
+}
+#getSignup
+{
+    text-align: left;
+    word-spacing: 1220px;
+}
+
+#getContact
+{
+    text-align: left;
+    word-spacing: 1200px;
+}
+
+#getCreate
+{
+    text-align: left;
+    word-spacing: 1180px;
+}
+
+#getUpdate
+{
+    text-align: left;
+    word-spacing: 1160px;
+}
+#getPartial
+{
+    text-align: left;
+    word-spacing: 1110px;
+}
+
+#getDelete
+{
+    text-align: left;
+    word-spacing: 1150px;
+}
