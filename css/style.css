@@ -13,6 +13,7 @@ body {
 #getText 
 {
     text-align: left;
+    word-spacing: 5px;
 }
 #getLogin
 {
