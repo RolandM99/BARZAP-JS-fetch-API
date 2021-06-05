@@ -1,6 +1,7 @@
-body {
+#container-body {
     width: 100%;
     height: 100%;
+    padding:0px 100px 0px 100px;
 }
 #title 
 {
@@ -18,39 +19,56 @@ body {
 #getLogin
 {
     text-align: left;
-    word-spacing: 1225px;
+    word-spacing: 1030px;
 }
 #getSignup
 {
     text-align: left;
-    word-spacing: 1220px;
+    word-spacing: 1020px;
 }
 
 #getContact
 {
     text-align: left;
-    word-spacing: 1200px;
+    word-spacing: 1000px;
 }
 
 #getCreate
 {
     text-align: left;
-    word-spacing: 1180px;
+    word-spacing: 965px;
 }
 
 #getUpdate
 {
     text-align: left;
-    word-spacing: 1160px;
+    word-spacing: 950px;
 }
 #getPartial
 {
     text-align: left;
-    word-spacing: 1110px;
+    word-spacing: 890px;
 }
 
 #getDelete
 {
     text-align: left;
-    word-spacing: 1150px;
+    word-spacing: 950px;
+}
+#titlle 
+{
+    text-align: left;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+#addPost {
+    margin-bottom: 50px;
+}
+#foot {
+    background-color: rgb(150, 145, 138);
+    text-align: center;
+    padding: 7px;
+    width: 100%;
+    height :100%;
 }
