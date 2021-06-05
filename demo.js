@@ -22,6 +22,9 @@ document.getElementById('getPartial').addEventListener
 document.getElementById('getDelete').addEventListener
 ('click',getDelete);
 
+document.getElementById('addPost').addEventListener
+('submit',addPost);
+
 
 function getText(){
     fetch('sample.txt')
@@ -39,9 +42,9 @@ function getLogin(){
         let output = '<h4>Login</h4>';
         data.forEach(function(login){
             output +=  `
-            <ul>
-                <li>Email: ${login.email}</li>
-                <li>Password: ${login.password}</li>
+            <ul class="list-group mb-3">
+                <li class="list-group-item">Email: ${login.email}</li>
+                <li class="list-group-item">Password: ${login.password}</li>
             </ul>
              `;
         })
@@ -56,11 +59,11 @@ function getSignup(){
         let output = '<h4>SignUp</h4>';
         data.forEach(function(signup){
             output +=  `
-            <ul>
-                <li>Username: ${signup.username}</li>
-                <li>Email: ${signup.email}</li>
-                <li>Password: ${signup.password}</li>
-                <li>Retype password: ${signup.password}</li>
+            <ul class = "list-group mb-3">
+                <li class="list-group-item">Username: ${signup.username}</li>
+                <li class="list-group-item">Email: ${signup.email}</li>
+                <li class="list-group-item">Password: ${signup.password}</li>
+                <li class="list-group-item">Retype password: ${signup.password}</li>
             </ul>
              `;
         })
@@ -75,10 +78,10 @@ function getContact(){
         let output = '<h4>List</h4>';
         data.forEach(function(posts){
             output +=  `
-            <ul>
-                <li>Name: ${posts.name}</li>
-                <li>Phone number: ${posts.number}</li>
-                <li>Adress: ${posts.adress}</li>
+            <ul class="list-group mb-3">
+                <li class="list-group-item">Name: ${posts.name}</li>
+                <li class="list-group-item">Phone number: ${posts.number}</li>
+                <li class="list-group-item">Adress: ${posts.adress}</li>
             </ul>
              `;
         })
@@ -147,4 +150,22 @@ function getDelete() {
 })
   .then((response) => response.json())
   .then((json) => console.log(json));
+}
+
+function addPost(e){
+    e.preventDefault();
+
+    let titlle = document.getElementById('titlle').value;
+    let body = document.getElementById('body').value;
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method : 'POST',
+        headers : {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-type' : 'application/json'
+        },
+        body : JSON.stringify({titlle:titlle, body:body})
+    })
+    .then((res) => res.json())
+    .then((data) => console.log(data))
 }
